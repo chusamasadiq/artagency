@@ -1,39 +1,48 @@
-.navbar{
+body {
+    background-color: black;
+}
+
+.navbar {
     padding: 0.8rem;
-    background-color: white;
+    /* background-color: black; */
+    color: white;
     /* box-shadow: 0 1px 4px 0 rgba(0,0,0,.2); */
 }
 
-.navbar-light .navbar-brand{
+.navbar-dark .navbar-brand {
     font: 2rem sans-serif;
     padding-left: 3rem;
+    color: white;
 }
 
-.navbar-light .navbar-nav .nav-link {
-    color: black;
+.navbar-dark .navbar-nav .nav-link {
+    color: white;
     font: 1.2rem sans-serif;
 }
 
-.navbar .nav-item{
+.navbar .nav-item {
     margin-left: 50px;
 }
 
-.navbar .nav-item .nav-link{
+.navbar .nav-item .nav-link {
     padding: 5px 0;
-    position:relative;
+    position: relative;
 }
-.navbar .nav-item .nav-link::before{
-    content :'';
+
+.navbar .nav-item .nav-link::before {
+    content: '';
     position: absolute;
     left: 0;
     bottom: 0;
     right: 0;
     height: 1px;
     transition: all 0.5s ease;
-    background-color: black;
+    background-color: white;
     transform: scale(0);
 }
+
 .navbar .nav-item .nav-link.active::before,
-.navbar .nav-item .nav-link:hover::before{
-transform: scale(1);
+.navbar .nav-item .nav-link:hover::before {
+    transform: scale(1);
+    color: white;
 }
